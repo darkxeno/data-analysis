@@ -1,0 +1,75 @@
+
+Data analysis toolkit
+=====================
+
+The data analysis toolkit contains:
+
+- Jupyter notebook (python)
+- Fastify backend (nodejs)
+- React frontend (javascript)
+- MongoDB database
+
+Jupiter notebook
+----------------
+
+Obtains the data from the Exnaton measurements API and does some analysis: agregrations over days and weekdays, counts to detect missing data, averages and stardard deviations to try localize patterns.
+
+Finally stores the analyzed subset of data on a mongodb database.
+
+Service Url:
+```
+http://127.0.0.1:8888/?token=ffb667acaebde150e8a29b633a2c4003985221b5f3df67a2
+```
+
+
+Fastify backend
+---------------
+
+Constructs a REST API to query the data stored on mongodb, validate the structure of all inputs / outputs using json schema and services a OpenApi / swagger documentation.
+
+
+Service Url:
+```
+http://localhost:3000/api/measurements
+```
+
+Swagger Url:
+```
+http://localhost:3000/documentation
+```
+
+React frontend
+--------------
+
+Renders a time series chart of all the data available using the REST API. Integrates the FlexMonster library for additional data analysis.
+
+
+Everything is orchestrated using docker-compose and docker for easy comsumption.
+
+Service Url:
+```
+http://localhost:80
+```
+
+
+MongoDB database
+----------------
+
+Just a simple storage that goes very well along JSON.
+
+
+=== Running
+
+Just execute the bash script on the root folder
+
+```
+./start.sh
+```
+
+=== Stopping
+
+```
+docker-compose stop
+```
+
+Enjoy...
