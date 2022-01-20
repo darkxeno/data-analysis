@@ -18,7 +18,9 @@ Finally stores the analyzed subset of data on a mongodb database.
 
 Service Url:
 ```
-http://127.0.0.1:8888/?token=ffb667acaebde150e8a29b633a2c4003985221b5f3df67a2
+http://127.0.0.1:8888/?token=XXXXXXX
+
+# The token can be seem at the log of the container during the bootstrap
 ```
 
 
