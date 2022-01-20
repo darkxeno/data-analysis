@@ -60,7 +60,8 @@ MongoDB database
 Just a simple storage that goes very well along JSON.
 
 
-=== Running
+Running
+-------
 
 Just execute the bash script on the root folder
 
@@ -68,7 +69,8 @@ Just execute the bash script on the root folder
 ./start.sh
 ```
 
-=== Stopping
+Stopping
+--------
 
 ```
 docker-compose stop
