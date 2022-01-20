@@ -12,15 +12,15 @@ The data analysis toolkit contains:
 Jupiter notebook
 ----------------
 
-Obtains the data from the Exnaton measurements API and does some analysis: agregrations over days and weekdays, counts to detect missing data, averages and stardard deviations to try localize patterns.
+Obtains the data from the Exnaton measurements API and does some analysis: agregations and resamples over days and weekdays, counts to detect missing data, averages and stardard deviations to try localize patterns.
 
 Finally stores the analyzed subset of data on a mongodb database.
 
-Service Url:
+*Service Url:*
 ```
 http://127.0.0.1:8888/?token=XXXXXXX
 
-# The token can be seem at the log of the container during the bootstrap
+# The token can be seen at the log of the Jupyter container during the bootstrap.
 ```
 
 
@@ -30,12 +30,12 @@ Fastify backend
 Constructs a REST API to query the data stored on mongodb, validate the structure of all inputs / outputs using json schema and services a OpenApi / swagger documentation.
 
 
-Service Url:
+*Service Url:*
 ```
 http://localhost:3000/api/measurements
 ```
 
-Swagger Url:
+*Swagger Url:*
 ```
 http://localhost:3000/documentation
 ```
@@ -48,7 +48,7 @@ Renders a time series chart of all the data available using the REST API. Integr
 
 Everything is orchestrated using docker-compose and docker for easy comsumption.
 
-Service Url:
+*Service Url:*
 ```
 http://localhost:80
 ```
