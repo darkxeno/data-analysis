@@ -104,8 +104,6 @@ describe("API tests", () => {
     expect(response.statusMessage).toBe('OK');
 
     const jsonBody = JSON.parse(response.body);
-
-    console.log('jsonBody',jsonBody);
     
     expect(jsonBody.length).toBe(0);    
   }); 
