@@ -6,7 +6,7 @@
   "scripts": {
     "please don't do this at home": "mongodb root user should never be used, mongodb credentials should never be hardcoded here",
     "start": "MONGODB_URL='mongodb://root:example@localhost:27017/admin' node index.js",
-    "test": "tap --reporter=list --watch"
+    "test": "MONGODB_URL='mongodb://root:example@localhost:27017/admin' jest --watchAll"
   },
   "keywords": [
     "jupyter",

@@ -43,6 +43,21 @@ http://localhost:3000/api/measurements
 http://localhost:3000/documentation
 ```
 
+*Testing the API*
+```
+curl http://localhost:3000/api/measurements\?limit\=10000\&start\=2021-09-15T22:45:00.000Z\&stop\=2021-09-16T00:00:00.000Z\&muid\=C-2caa1954-b3c8-466c-9722-c1b72dabe32b -v | jq .
+```
+
+*Running API tests*
+```
+#ensure that mongodb is running and exposed
+
+docker-compose up -d mongo
+
+cd ./backend
+npm test
+```
+
 React frontend
 --------------
 
