@@ -12,7 +12,9 @@ The data analysis toolkit contains:
 Jupiter notebook
 ----------------
 
-Obtains the data from the Exnaton measurements API and does some analysis: agregations and resamples over days and weekdays, counts to detect missing data, averages and stardard deviations to try localize patterns.
+Obtains the data from the measurements API and does some analysis: agregations and resamples over days and weekdays, counts to detect missing data, averages and stardard deviations to try localize patterns.
+
+NOTE: remember to introduce to email and password on the notebook in order to connect to the API.
 
 Finally stores the analyzed subset of data on a mongodb database.
 
@@ -75,5 +77,11 @@ Stopping
 ```
 docker-compose stop
 ```
+
+Roadmap
+-------
+
+- Add a chart that mixes lines for weekday averages and the std values represented as a surrounding area where scatter points for each value can be seen
+- Add more testing (backend / frontend)
 
 Enjoy...
