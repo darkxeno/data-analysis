@@ -97,7 +97,7 @@ docker-compose stop
 Roadmap
 -------
 
-- Add a chart that mixes lines for weekday averages and the std values represented as a surrounding area where scatter points for each value can be seen
+- Add a chart that mixes lines for weekday averages and the std values represented as a surrounding area where scatter points for each value can be seen (partially added on the last commit)
 - Add more testing (backend / frontend)
 
 Enjoy...
