@@ -25,6 +25,7 @@ http://127.0.0.1:8888/?token=XXXXXXX
 # The token can be seen at the log of the Jupyter container during the bootstrap.
 ```
 
+And execution example can be seen [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/darkxeno/data-analysis/master/DataAnalysis.html).
 
 Fastify backend
 ---------------
